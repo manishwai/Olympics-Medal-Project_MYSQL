@@ -1,54 +1,59 @@
-# Olympics-Medal-Project_MYSQL
-This is a historical dataset on the modern Olympic Games, including all the Games from Athens 1896 to Rio 2016.
-Note that the Winter and Summer Games were held in the same year up until 1992.
-After that, they staggered them such that Winter Games occur on a four year cycle starting with 1994,
-then Summer in 1996, then Winter in 1998, and so on. 
+# **Olympic Games Historical Dataset Analysis** ![Icon](https://img.icons8.com/ios-filled/50/000000/olympics.png)
 
-Dataset Schema
-**athelete_table2**
-ID - Unique number for each athlete
-Name - Athlete's name
-Sex - M or F
-Age - Integer
-Height - In centimeters
-Weight - In kilograms
-Team - Team name
-NOC - National Olympic Committee 3-letter code
-Games - Year and season
-Year - Integer
-Season - Summer or Winter
-City - Host city
-Sport - Sport
-Event - Event
-Medal - Gold, Silver, Bronze, or NA
+## **Dataset Overview**
 
+This dataset includes historical records from the modern Olympic Games, covering all events from Athens 1896 to Rio 2016. Note that:
+- **Winter and Summer Games** were held in the same year until 1992.
+- From 1994, the Winter Games were held every four years, alternating with the Summer Games.
 
-**nocregion**
-noc: National Olympic Committee code.
-region: Region associated with the NOC.
+### **Dataset Schema**
 
-Dataset Link :https://www.kaggle.com/datasets/heesoo37/120-years-of-olympic-history-athletes-and-results
+- **athlete_table2**:
+  - **ID**: Unique number for each athlete.
+  - **Name**: Athlete's name.
+  - **Sex**: Gender (M or F).
+  - **Age**: Age of the athlete.
+  - **Height**: Height in centimeters.
+  - **Weight**: Weight in kilograms.
+  - **Team**: Team name.
+  - **NOC**: National Olympic Committee 3-letter code.
+  - **Games**: Year and season of the Olympic Games.
+  - **Year**: Year of the Olympic Games.
+  - **Season**: Season of the Games (Summer or Winter).
+  - **City**: Host city.
+  - **Sport**: Sport played.
+  - **Event**: Event in which the athlete competed.
+  - **Medal**: Type of medal won (Gold, Silver, Bronze, or NA).
 
-This Anlaysis Involve 20 questions/Queries covering basic topics to Intermediate Level Topics such as CTE , Subqueries and Window Function
-Questions List:
-1)How many olympics games have been held?
-2)List down all Olympics games held so far.
-3)Mention the total no of nations who participated in each olympics game?
-4)Which year saw the highest and lowest no of countries participating in olympics?
-5)Which nation has participated in all of the olympic games?
-6)Identify the sport which was played in all summer olympics.
-7)Which Sports were just played only once in the olympics?
-8)Fetch the total no of sports played in each olympic games.
-9)Fetch details of the oldest athletes to win a gold medal.
-10)Find the Ratio of male and female athletes participated in all olympic games.
-11)Fetch the top 5 athletes who have won the most gold medals.
-12)Fetch the top 5 athletes who have won the most medals (gold/silver/bronze).
-13)Fetch the top 5 most successful countries in olympics. Success is defined by no of medals won.
-14)List down total gold, silver and broze medals won by each country.
-15)List down total gold, silver and broze medals won by each country corresponding to each olympic games.
-16)Identify which country won the most gold, most silver and most bronze medals in each olympic games.
-17)Identify which country won the most gold, most silver, most bronze medals and the most medals in each olympic games.
-18)Which countries have never won gold medal but have won silver/bronze medals?
-19)In which Sport/event, India has won highest medals.
-20)Break down all olympic games where india won medal for Hockey and how many medals in each olympic games.
+- **nocregion**:
+  - **noc**: National Olympic Committee code.
+  - **region**: Region associated with the NOC.
+
+[**Dataset Link**](https://www.kaggle.com/datasets/heesoo37/120-years-of-olympic-history-athletes-and-results)
+
+## **Analysis Questions**
+
+This analysis involves 20 questions/queries covering basic to intermediate topics such as Common Table Expressions (CTEs), subqueries, and window functions.
+
+1. **How many Olympic Games have been held?**
+2. **List all Olympic Games held so far.**
+3. **Mention the total number of nations that participated in each Olympic Games.**
+4. **Which year saw the highest and lowest number of countries participating in the Olympics?**
+5. **Which nation has participated in all of the Olympic Games?**
+6. **Identify the sport that was played in all Summer Olympics.**
+7. **Which sports were played only once in the Olympics?**
+8. **Fetch the total number of sports played in each Olympic Games.**
+9. **Fetch details of the oldest athletes to win a gold medal.**
+10. **Find the ratio of male to female athletes participating in all Olympic Games.**
+11. **Fetch the top 5 athletes who have won the most gold medals.**
+12. **Fetch the top 5 athletes who have won the most medals (gold/silver/bronze).**
+13. **Fetch the top 5 most successful countries in the Olympics, defined by the number of medals won.**
+14. **List the total gold, silver, and bronze medals won by each country.**
+15. **List the total gold, silver, and bronze medals won by each country for each Olympic Games.**
+16. **Identify which country won the most gold, most silver, and most bronze medals in each Olympic Games.**
+17. **Identify which country won the most gold, most silver, most bronze medals, and the most medals in each Olympic Games.**
+18. **Which countries have never won a gold medal but have won silver/bronze medals?**
+19. **In which sport/event has India won the highest number of medals?**
+20. **Break down all Olympic Games where India won medals for Hockey and specify how many medals were won in each Olympic Games.**
+
 
